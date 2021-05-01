@@ -38,5 +38,6 @@ fn main() {
     //     sh::stack_heap();
     // }
 
-    datastructures::option();
+    //datastructures::option();
+    datastructures::arrays();
 }

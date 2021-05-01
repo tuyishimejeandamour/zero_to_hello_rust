@@ -17,3 +17,24 @@ pub fn option(){
 
     if let Some(x) = result {println!(" {}",x)}
 }
+pub fn arrays(){
+    //one dimensional array
+    let mut x:[i32;3] =[1,2,3];
+
+    println!("{:?}",x);
+    x[2] = 45;
+    //multi dimensional array
+    let  y: [[f64; 3]; 2] = [
+        [2.0,3.0,34.0],
+        [3.0,0.0,0.0]
+    ];
+
+    println!("multi dimensional array");
+    for i in 0..y.len(){
+        for j in 0..y[i].len(){
+            print!("{} \t",y[i][j]);
+        }
+        println!();
+    }
+
+}

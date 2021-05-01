@@ -39,5 +39,6 @@ fn main() {
     // }
 
     //datastructures::option();
-    datastructures::arrays();
+    //datastructures::arrays();
+    datastructures::vectors();
 }

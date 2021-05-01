@@ -38,3 +38,42 @@ pub fn arrays(){
     }
 
 }
+pub fn vectors(){
+    let mut x= Vec::new();
+    x.push(7);
+    x.push(0);
+    x.push(5);
+
+    println!("{:?}",x);
+
+    // note the type of number put in index must be of the memory of machine you are UseSingleDictionary
+    //for example usize is the appropriate type you must use
+
+    //accessing the element of the vector  using loop_statement
+
+    for i in &x{println!("{}",i)}
+
+    //you can access also the element of the vector by using  index
+
+    //deleting the element of the vector
+
+    // as indicated by the editor this pop function return option so we have to apply match to get the actual item value
+
+    let removed = x.pop();
+
+    match removed{
+        Some(x)=> println!("{}",x),
+        None => print!("the vector is input")
+    }
+
+    //what will happen if we want to access the index which is not in the vector
+    // and use get method provided by vector  datastructures
+    let index:usize = 9;
+
+    match x.get(index){
+        Some(r)=>println!("value at x[{}] = {}",index,r),
+        None =>println!("the index doesn't exist")
+    }
+
+
+}

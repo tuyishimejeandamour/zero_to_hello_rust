@@ -97,3 +97,38 @@ pub fn slices(){
     apply_slice(&a[1..4],);
     apply_slice_mut(&mut a);
 }
+
+pub fn strings(){
+    // this form of string is not mutable and there is no much you can do with it
+    //you can not access the characters in it by applying indexing to a[0]
+    //you can not change it
+    let a:&'static str = "hello here we go";
+    println!("{}",a);
+
+    // inorder to have many operation on string you have to use head allocated
+
+    let  mut a = String::new();
+
+    //let take example like you want to  put all character fom a-z in one string;
+
+    let mut x = 'a' as u8;
+    while x <= 'z' as u8{
+        a.push(x as char);
+        x += 1;
+    }
+
+    println!("{:?}",a);
+
+    //concatenation
+
+    // in order to  concatenate the strings you can use + symbol
+    // one must be &str in order to concatenate
+
+    //to change string to &str  you use & to
+    let n  = &a;
+    //you can use to_string() also to convert str to string;
+    let mut s = "hello there".to_string();
+    s = a+ &s;
+    println!("{}",s);
+
+}

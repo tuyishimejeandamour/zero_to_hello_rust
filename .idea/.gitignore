@@ -1,0 +1,10 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# CodeStream ignored files
+/../../zero_to_hello_rust\.idea/codestream.xml
+# Datasource local storage ignored files
+/../../../../../../:\Users\User\CLionProjects\zero_to_hello_rust\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/

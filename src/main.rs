@@ -40,5 +40,6 @@ fn main() {
 
     //datastructures::option();
     //datastructures::arrays();
-    datastructures::vectors();
+    //datastructures::vectors();
+    datastructures::slices();
 }

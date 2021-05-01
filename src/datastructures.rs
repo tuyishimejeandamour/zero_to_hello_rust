@@ -132,3 +132,19 @@ pub fn strings(){
     println!("{}",s);
 
 }
+fn sum_divide(a:i32,b:i32) ->(i32,i64){
+    (a+b, (a / b) as i64)
+}
+pub fn tuples(){
+    // tuple data structure is used when you want  output two  different datatype element
+    // act as array but can hold two different datatype
+
+    let (a ,b) = (12,34);
+    //accessing the element when there is destruction
+    println!("{}",a);
+
+    //now let's check if the  tuple is in one variable name
+
+    let sp = sum_divide(8,3);
+    println!("{0}+{1} = {2} and {0}+{1} = {3}",8,3,sp.0,sp.1)
+}

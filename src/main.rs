@@ -42,5 +42,6 @@ fn main() {
     //datastructures::arrays();
     //datastructures::vectors();
     //datastructures::slices();
-    datastructures::strings();
+    //datastructures::strings();
+    datastructures::tuples();
 }
